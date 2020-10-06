@@ -82,9 +82,9 @@
                     DataContext="{Binding RelativeSource={RelativeSource AncestorType=Window}}">
                     <MenuItem
                         Header="IsBackButtonVisible"
-                        IsEnabled="False"
+                        IsEnabled="True"
                         IsCheckable="True"
-                        IsChecked="{Binding Path=(ui:TitleBar.IsBackButtonVisible), Mode=OneWay}" />
+                        IsChecked="{Binding Path=(ui:TitleBar.IsBackButtonVisible)}" />
                     <MenuItem
                         Header="IsIconVisible"
                         IsCheckable="True"

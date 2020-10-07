@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net462;netcoreapp3.0</TargetFrameworks>
+    <TargetFrameworks>net45;net462;net48;netcoreapp3.0</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <NeutralLanguage>en-US</NeutralLanguage>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -22,6 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.19041.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Resources\Strings.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -35,6 +39,10 @@
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
       <CustomToolNamespace>ModernWpf</CustomToolNamespace>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="System.Runtime.WindowsRuntime" Version="4.7.0" />
   </ItemGroup>
 
 </Project>

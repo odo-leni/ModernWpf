@@ -317,7 +317,7 @@
                                         SelectionChanged="NavigationView_SelectionChanged"
                                         Header="{Binding ElementName=headerText, Path=Text, Mode=TwoWay}"
                                         PaneTitle="{Binding ElementName=paneText, Path=Text, Mode=TwoWay}"
-                                        PaneDisplayMode="Left" ExpandedModeThresholdWidth="500"
+                                        PaneDisplayMode="Left" ExpandedModeThresholdWidth="500" 
                                         IsTabStop="False">
                 <muxc:NavigationView.MenuItems>
                     <muxc:NavigationViewItem Content="Menu Item1" Tag="SamplePage1" x:Name="SamplePage1Item" >
